@@ -1,148 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archetype-descriptor
-	xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
-	name="spring-cloud-scaffold-archetype">
-	<requiredProperties>
-		<requiredProperty key="port"></requiredProperty>
-		<requiredProperty key="version">
-			<defaultValue>0.0.1-SNAPSHOT</defaultValue>
-		</requiredProperty>
-		<requiredProperty key="componentId"></requiredProperty>
-	</requiredProperties>
+  xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+  name="spring-cloud-scaffold-archetype">
+  <requiredProperties>
+    <requiredProperty key="port"></requiredProperty>
+    <requiredProperty key="version">
+      <defaultValue>0.0.1-SNAPSHOT</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="componentId"></requiredProperty>
+  </requiredProperties>
 
-	<modules>
-		<module id="${rootArtifactId}-api" dir="__rootArtifactId__-api" name="${rootArtifactId}-api">
-			<fileSets>
-				<fileSet filtered="true" encoding="UTF-8" packaged="true">
-					<directory>src/main/java</directory>
-					<includes>
-						<include>**/*.java</include>
-					</includes>
-				</fileSet>
+  <modules>
+    <module id="${rootArtifactId}-api" dir="__rootArtifactId__-api" name="${rootArtifactId}-api">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8" packaged="true">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
 
-				<fileSet filtered="true" encoding="UTF-8" packaged="false">
-					<directory></directory>
-					<includes>
-						<include>src/main/resources</include>
-						<include>src/test</include>
-					</includes>
-				</fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+          <directory></directory>
+          <includes>
+            <include>src/main/resources</include>
+            <include>src/test</include>
+          </includes>
+        </fileSet>
 
-				<fileSet filtered="true" encoding="UTF-8" packaged="false">
-					<directory></directory>
-					<includes>
-						<include>pom.xml</include>
-					</includes>
-				</fileSet>
-			</fileSets>
-		</module>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+          <directory></directory>
+          <includes>
+            <include>pom.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
 
-		<module id="${rootArtifactId}-core" dir="__rootArtifactId__-core" name="${rootArtifactId}-core">
-			<fileSets>
-				<fileSet filtered="true" encoding="UTF-8" packaged="true">
-					<directory>src/main/java</directory>
-					<includes>
-						<include>**/*.java</include>
-					</includes>
-				</fileSet>
+    <module id="${rootArtifactId}-core" dir="__rootArtifactId__-core" name="${rootArtifactId}-core">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8" packaged="true">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
 
-				<fileSet filtered="true" encoding="UTF-8" packaged="false">
-					<directory></directory>
-					<includes>
-						<include>src/main/resources</include>
-						<include>src/test</include>
-					</includes>
-				</fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+          <directory></directory>
+          <includes>
+            <include>src/main/resources</include>
+            <include>src/test</include>
+          </includes>
+        </fileSet>
 
-				<fileSet filtered="true" encoding="UTF-8" packaged="false">
-					<directory></directory>
-					<includes>
-						<include>pom.xml</include>
-					</includes>
-				</fileSet>
-			</fileSets>
-		</module>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+          <directory></directory>
+          <includes>
+            <include>pom.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
 
-		<module id="${rootArtifactId}-service" dir="__rootArtifactId__-service" name="${rootArtifactId}-service">
-			<fileSets>
-				<fileSet filtered="true" encoding="UTF-8" packaged="true">
-					<directory>src/main/java</directory>
-					<includes>
-						<include>**/*.java</include>
-					</includes>
-				</fileSet>
+    <module id="${rootArtifactId}-service" dir="__rootArtifactId__-service"
+      name="${rootArtifactId}-service">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8" packaged="true">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
 
-				<fileSet filtered="true" encoding="UTF-8" packaged="false">
-					<directory></directory>
-					<includes>
-						<include>src/main/resources</include>
-						<include>src/test</include>
-					</includes>
-				</fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+          <directory></directory>
+          <includes>
+            <include>src/main/resources</include>
+            <include>src/test</include>
+          </includes>
+        </fileSet>
 
-				<fileSet filtered="true" encoding="UTF-8" packaged="false">
-					<directory></directory>
-					<includes>
-						<include>pom.xml</include>
-					</includes>
-				</fileSet>
-			</fileSets>
-		</module>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+          <directory></directory>
+          <includes>
+            <include>pom.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
 
-		<module id="${rootArtifactId}-webapp" dir="__rootArtifactId__-webapp" name="${rootArtifactId}-webapp">
-			<fileSets>
-				<fileSet filtered="true" encoding="UTF-8" packaged="false">
-					<directory>src/main/resources</directory>
-					<includes>
-						<include>**/*.**</include>
-					</includes>
-				</fileSet>
+    <module id="${rootArtifactId}-webapp" dir="__rootArtifactId__-webapp"
+      name="${rootArtifactId}-webapp">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.**</include>
+          </includes>
+        </fileSet>
 
-				<fileSet filtered="true" encoding="UTF-8" packaged="true">
-					<directory>src/main/java</directory>
-					<includes>
-						<include>**/*.java</include>
-					</includes>
-				</fileSet>
+        <fileSet filtered="true" encoding="UTF-8" packaged="true">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
 
-				<fileSet filtered="true" encoding="UTF-8">
-					<directory>view</directory>
-					<includes>
-						<include>**/static</include>
-						<include>**/web-src</include>
-						<include>**/*.*</include>
-					</includes>
-				</fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>view</directory>
+          <includes>
+            <include>**/static</include>
+            <include>**/web-src</include>
+            <include>**/*.*</include>
+          </includes>
+        </fileSet>
 
-				<fileSet filtered="true" encoding="UTF-8" packaged="false">
-					<directory></directory>
-					<includes>
-						<include>pom.xml</include>
-					</includes>
-				</fileSet>
-			</fileSets>
-		</module>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+          <directory></directory>
+          <includes>
+            <include>pom.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
 
-		<module id="${rootArtifactId}-view" dir="__rootArtifactId__-view" name="${rootArtifactId}-view">
-			<fileSets>
-				<fileSet filtered="true" encoding="UTF-8" packaged="false">
-					<directory>src/main/resources</directory>
-					<includes>
-						<include>**/static</include>
-						<include>**/web-src</include>
-						<include>**/*.*</include>
-					</includes>
-				</fileSet>
+    <module id="${rootArtifactId}-view" dir="__rootArtifactId__-view" name="${rootArtifactId}-view">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/static</include>
+            <include>**/web-src</include>
+            <include>**/*.*</include>
+          </includes>
+        </fileSet>
 
-				<fileSet filtered="true" encoding="UTF-8" packaged="false">
-					<directory></directory>
-					<includes>
-						<include>pom.xml</include>
-					</includes>
-				</fileSet>
-			</fileSets>
-		</module>
-	</modules>
+        <fileSet filtered="true" encoding="UTF-8" packaged="false">
+          <directory></directory>
+          <includes>
+            <include>pom.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+  </modules>
 </archetype-descriptor>
