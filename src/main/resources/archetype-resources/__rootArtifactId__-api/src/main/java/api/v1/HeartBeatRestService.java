@@ -1,4 +1,4 @@
-package $
+package ${package}.api.v1;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -6,8 +6,6 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-
-{package}.api.v1;
 
 /**
  * HeartBeatRestService the restful api for example

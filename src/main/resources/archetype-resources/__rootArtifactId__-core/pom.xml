@@ -15,7 +15,7 @@
   <description>Project ${artifactId} core</description>
 
   <dependencies>
-    <!-- 可选，基础包中的common包 -->
+    <!-- scaffold-common -->
     <dependency>
       <groupId>com.spring4all</groupId>
       <artifactId>scaffold-common</artifactId>

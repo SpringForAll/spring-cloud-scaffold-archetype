@@ -1,9 +1,7 @@
-package $
+package ${package}.api.v1.dto;
 
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
-
-{package}.api.v1.dto;
 
 /**
  * the DTO for example

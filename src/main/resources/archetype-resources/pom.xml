@@ -20,6 +20,7 @@
     <module>${rootArtifactId}-api</module>
     <module>${rootArtifactId}-core</module>
     <module>${rootArtifactId}-service</module>
-    <module>${rootArtifactId}-webapp</module>
+    <module>${rootArtifactId}-view</module>
+    <module>${rootArtifactId}-start</module>
   </modules>
 </project>

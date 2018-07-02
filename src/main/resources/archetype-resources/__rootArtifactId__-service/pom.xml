@@ -19,21 +19,24 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-
     <!-- api module -->
     <dependency>
       <groupId>${groupId}</groupId>
       <artifactId>${rootArtifactId}-api</artifactId>
-      <version>${version}</version>
     </dependency>
-
     <!-- core module -->
     <dependency>
       <groupId>${groupId}</groupId>
       <artifactId>${rootArtifactId}-core</artifactId>
-      <version>${version}</version>
     </dependency>
-
+    <dependency>
+      <groupId>com.spring4all</groupId>
+      <artifactId>scaffold-resteasy</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.spring4all</groupId>
+      <artifactId>scaffold-feign-jaxrs</artifactId>
+    </dependency>
   </dependencies>
 
 </project>

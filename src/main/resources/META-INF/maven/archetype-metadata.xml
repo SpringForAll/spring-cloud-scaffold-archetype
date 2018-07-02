@@ -29,13 +29,6 @@
             <include>src/test</include>
           </includes>
         </fileSet>
-
-        <fileSet filtered="true" encoding="UTF-8" packaged="false">
-          <directory></directory>
-          <includes>
-            <include>pom.xml</include>
-          </includes>
-        </fileSet>
       </fileSets>
     </module>
 
@@ -53,13 +46,6 @@
           <includes>
             <include>src/main/resources</include>
             <include>src/test</include>
-          </includes>
-        </fileSet>
-
-        <fileSet filtered="true" encoding="UTF-8" packaged="false">
-          <directory></directory>
-          <includes>
-            <include>pom.xml</include>
           </includes>
         </fileSet>
       </fileSets>
@@ -82,48 +68,6 @@
             <include>src/test</include>
           </includes>
         </fileSet>
-
-        <fileSet filtered="true" encoding="UTF-8" packaged="false">
-          <directory></directory>
-          <includes>
-            <include>pom.xml</include>
-          </includes>
-        </fileSet>
-      </fileSets>
-    </module>
-
-    <module id="${rootArtifactId}-webapp" dir="__rootArtifactId__-webapp"
-      name="${rootArtifactId}-webapp">
-      <fileSets>
-        <fileSet filtered="true" encoding="UTF-8" packaged="false">
-          <directory>src/main/resources</directory>
-          <includes>
-            <include>**/*.**</include>
-          </includes>
-        </fileSet>
-
-        <fileSet filtered="true" encoding="UTF-8" packaged="true">
-          <directory>src/main/java</directory>
-          <includes>
-            <include>**/*.java</include>
-          </includes>
-        </fileSet>
-
-        <fileSet filtered="true" encoding="UTF-8">
-          <directory>view</directory>
-          <includes>
-            <include>**/static</include>
-            <include>**/web-src</include>
-            <include>**/*.*</include>
-          </includes>
-        </fileSet>
-
-        <fileSet filtered="true" encoding="UTF-8" packaged="false">
-          <directory></directory>
-          <includes>
-            <include>pom.xml</include>
-          </includes>
-        </fileSet>
       </fileSets>
     </module>
 
@@ -137,11 +81,22 @@
             <include>**/*.*</include>
           </includes>
         </fileSet>
+      </fileSets>
+    </module>
 
+    <module id="${rootArtifactId}-start" dir="__rootArtifactId__-start" name="${rootArtifactId}-start">
+      <fileSets>
         <fileSet filtered="true" encoding="UTF-8" packaged="false">
-          <directory></directory>
+          <directory>src/main/resources</directory>
           <includes>
-            <include>pom.xml</include>
+            <include>**/*.**</include>
+          </includes>
+        </fileSet>
+
+        <fileSet filtered="true" encoding="UTF-8" packaged="true">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
           </includes>
         </fileSet>
       </fileSets>
