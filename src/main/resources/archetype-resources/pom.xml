@@ -23,4 +23,37 @@
     <module>${rootArtifactId}-view</module>
     <module>${rootArtifactId}-start</module>
   </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>${groupId}</groupId>
+        <artifactId>${rootArtifactId}-api</artifactId>
+        <version>${version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${groupId}</groupId>
+        <artifactId>${rootArtifactId}-core</artifactId>
+        <version>${version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${groupId}</groupId>
+        <artifactId>${rootArtifactId}-service</artifactId>
+        <version>${version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${groupId}</groupId>
+        <artifactId>${rootArtifactId}-view</artifactId>
+        <version>${version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
 </project>
