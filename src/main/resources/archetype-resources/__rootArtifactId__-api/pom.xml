@@ -16,8 +16,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.jboss.spec.javax.ws.rs</groupId>
-      <artifactId>jboss-jaxrs-api_2.0_spec</artifactId>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>jaxrs-api</artifactId>
     </dependency>
     <dependency>
       <groupId>io.swagger</groupId>
