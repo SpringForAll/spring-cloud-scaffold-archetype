@@ -1,5 +1,5 @@
 # spring-cloud-scaffold-archetype
-the archetype for spring-cloud-scaffold
+the archetype for spring-cloud-scaffold will donate to the Spring For All community
 
 exec the shell for maven command:
 ```shell
